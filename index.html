@@ -3,6 +3,8 @@
   <head>
     <title>Kalasaradhi</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Georgia&display=swap"
       rel="stylesheet"
@@ -11,6 +13,11 @@
       src="https://kit.fontawesome.com/49dcc77b63.js"
       crossorigin="anonymous"
     ></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+    <link rel="manifest" href="/assets/images/site.webmanifest">
   </head>
 
   <body>
@@ -32,50 +39,93 @@
           <a href="#gallery"> Gallery</a>
         </div>
         <div>
+          <a href="#events"> Events</a>
+        </div>
+        <div>
           <a href="#contact"> Contact</a>
         </div>
       </div>
+      <div class="menu-icon" onclick="displayMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
     </nav>
 
-    <div class="parallax">
-      <div class="container logo-container">
-        <img class="logo-banner" src="assets/images/logo.png" />
+    <div class="mobile-container" id="mobile-menu">
+      <div class="topnav">
+        <div>
+          <a href="#home">Home</a>
+          <a onclick='scrollToSection("about");'>About</a>
+          <a onclick='scrollToSection("classes");'>Classes</a>
+          <a onclick='scrollToSection("gallery");'>Gallery</a>
+          <a onclick='scrollToSection("events");'> Events</a>
+          <a onclick='scrollToSection("contact");'>Contact</a>
+        </div>
       </div>
+    </div>
+
+    <div class="container banner-container" id="home">
+      <img class="banner" src="assets/images/banner.jpg" />
     </div>
 
     <div class="container" id="about">
       <div class="content about">
         <p>
-          കലാസാരധി സെൻ്റർ ഫോർ പെർഫോമിംഗ് മ്യൂസിക് കൾച്ചറൽ ആൻഡ് മാർഷ്യൽ ആർട്‌സ്
-          തെക്കൻ കേരളത്തിലെ ഒരു പ്രമുഖ കലാ പഠന കേന്ദ്രമാണ്. ഇന്ത്യയിലെയും
-          കേരളത്തിലെയും വിവിധ പരമ്പരാഗത കലാരൂപങ്ങളിൽ പരിശീലനം നൽകുന്ന ഒരു
-          അക്കാദമിയാണിത്. കലാസാരധി വ്യത്യസ്ത തരത്തിലുള്ള പരമ്പരാഗത സ്റ്റേജ്
-          പ്രോഗ്രാമുകൾ നടത്തുന്നു. കടകളി, കളരിപ്പയറ്റ്, ക്ലാസിക്കൽ നൃത്തം,
-          സംഗീതോപകരണങ്ങൾ, ഡ്രോയിംഗ്, പെയിൻ്റിംഗ് തുടങ്ങിയവ ഈ സ്ഥാപനത്തിൽ
-          പഠിക്കുന്നു.
+          Kalasaradhi is a leading center of art studies in southern Kerala,
+          India.It is an independent and private institution.Kalasaradhi Centre
+          for Performing, Music, Cultural and Martial Arts is full name.It is an
+          academy for training in various traditional art forms of India and
+          Kerala.Kalasaradhi conducting different types traditional stage
+          programs.It also conduct workshops for different subjects. The
+          specialty of this institution is that various art forms can be learned
+          at the lowest cost. Fee concessions and sponsored scholarships are
+          provided to economically backward students.
         </p>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          In January 2022, Kalasaradhi was inaugurated by Honorable Mrs. Sunitha
+          Vimal, Kerala's first classical dancer Judge and Industrial Tribunal
+          Judge of Kollam District. The inauguration was held in the presence of
+          Mr. Kovoor Kunjumon, a member of the Kerala State Legislative
+          Assembly.The director is K Harikumar, a writer and theater artist.
+          Class Coordinator Muthupilakad Rajendran (Retd Subedar Major in Indian
+          Army).Muthupilakkadu (near Sasthamkotta, Kollam
+          district,Kerala,India)is head of this institution.Kadampanad and Adoor
+          are branches.
         </p>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          Kalaripayattu,Kathakali Bharatanatyam, Mohiniyattam, Kuchipudi, Kerala
+          Nadanam, Koodiyattam,Ottanthullal,Chakyar kooth,Kadhak dance and
+          Drama, Chenda instrument, Violin, Carnatic music, Sopana music and
+          Music keyboard .Painting and pencil drawing are other important study
+          for program.
+        </p>
+        <div style="width: 100%">
+          <h2 class="subheading">Our Vision</h2>
+        </div>
+        <p>
+          Kalasaradhi is an independent institution.The basic objective of
+          Kalasaradhi is to teach and propagate the various traditional art
+          forms of Kerala and India.Orientation of traditional art forms to
+          students of Kerala and India in modern times.
+        </p>
+        <p>
+          Another important objective is to teach art forms like Kathakali,
+          traditional dance forms, ritual arts, music, musical instruments, etc.
+          and the martial art of Kalaripayat at low cost.Kalasarathy strives to
+          bring traditional art forms that are losing importance to the
+          mainstream and find talented artists and make them prominent in their
+          respective art forms.Aims at empowering women by learning art forms
+          and performing them on various platforms. For that, various classes
+          are provided for the convenience of housewives and working women in
+          various fields.Kalasaradhi strives to fulfill the wish of those who
+          were unable to learn art forms in their childhood due to various
+          circumstances or who did not complete their studies.Kalasaradhi aims
+          to preserve and teach traditional temple art forms. Kalasaradhi wants
+          to create jobs in the arts sector and help underprivileged artists.
         </p>
       </div>
     </div>
 
-    <div class="section-break" id="classess">
+    <div class="section-break" id="classes">
       <h1>Our Classes</h1>
     </div>
 
@@ -83,56 +133,95 @@
     <div class="container">
       <div class="content">
         <div class="item">
-          <img src="assets/images/chenda.jpg" width="300" height="200" />
+          <div
+            class="item-img"
+            style="background-image: url('/assets/images/kathakali.jpg')"
+          ></div>
           <div>
-            <h4>Chenda</h4>
-            <p>15 hours</p>
-            <p>Every Saturday & Sunday</p>
-            <p>Venue</p>
-            <button class="register">Register</button>
+            <h4>Performing Arts</h4>
+            <p>Kadhakali</p>
+            <p>Bharatanatyam</p>
+            <p>Mohiniyattam</p>
+            <p>Kuchipudi</p>
+            <p>Kerala Nadanam</p>
+            <p>Koodiyattam</p>
+            <p>Ottanthullal</p>
+            <p>Chakyar kooth</p>
+            <p>Kadhak dance</p>
           </div>
+          <button class="register" onclick="openModel()">Register</button>
         </div>
         <div class="item">
-          <img src="assets/images/violin.jpg" width="300" height="200" />
+          <div
+            class="item-img"
+            style="background-image: url('/assets/images/chenda.jpg')"
+          ></div>
           <div>
-            <h4>Violin</h4>
-            <p>15 hours</p>
-            <p>Every Saturday & Sunday</p>
-            <p>Venue</p>
-            <button class="register">Register</button>
+            <h4>Music</h4>
+            <p>Chenda</p>
+            <p>Cannatic Music</p>
+            <p>Violin</p>
+            <p>Flute</p>
+            <p>Mrudamgam</p>
+            <p>Sopana Sangetam</p>
           </div>
+          <button class="register">Register</button>
         </div>
         <div class="item">
-          <img src="assets/images/kalaripayattu.jpg" width="300" height="200" />
+          <div
+            class="item-img"
+            style="background-image: url('/assets/images/kalaripayattu.jpg')"
+          ></div>
           <div>
-            <h4>Kalari</h4>
-            <p>15 hours</p>
-            <p>Every Saturday & Sunday</p>
-            <p>Venue</p>
-            <button class="register">Register</button>
+            <h4>Martial Arts</h4>
+            <p>Kalaripayattu</p>
           </div>
+          <button class="register">Register</button>
         </div>
         <div class="item">
-          <img src="assets/images/kathakali.jpg" width="300" height="200" />
+          <div
+            class="item-img"
+            style="background-image: url('/assets/images/violin.jpg')"
+          ></div>
           <div>
-            <h4>kathakali</h4>
-            <p>15 hours</p>
-            <p>Every Saturday & Sunday</p>
-            <p>Venue</p>
-            <button class="register">Register</button>
+            <h4>Workshops</h4>
+            <p>Drama</p>
+            <p>Dance</p>
+            <p>Drawing</p>
+            <p>Kadhakali</p>
+            <p>Kalaripayat</p>
+            <p>Violin</p>
           </div>
+          <button class="register">Register</button>
+        </div>
+        <div class="item">
+          <div
+            class="item-img"
+            style="background-image: url('/assets/images/violin.jpg')"
+          ></div>
+          <div>
+            <h4>Others</h4>
+            <p>Arts</p>
+            <p>Paining</p>
+            <p>Dance Makeup</p>
+          </div>
+          <button class="register">Register</button>
         </div>
       </div>
     </div>
 
-    <div class="section-break" id="gallary">
+    <div class="section-break" id="gallery">
       <h1>Gallery</h1>
     </div>
     <!-- Classess -->
     <div class="container">
       <div class="content">
         <div class="gallery">
-          <img src="assets/images/gallary/gallery1.jpg" />
+          <img
+            src="assets/images/gallary/gallery1.jpg"
+            width="300"
+            height="200"
+          />
         </div>
         <div class="gallery">
           <img
@@ -173,20 +262,35 @@
     </div>
 
     <div class="section-break">
+      <h1>News & Events</h1>
+    </div>
+
+    <div class="container" id="events">
+      <div class="events">
+        <div class="event">
+          <h4>Vismayam Group</h4>
+          <p class="event-date">From February, 2025</p>
+          <p>Kalasaradhi is starting dance study group for housewives and working woman. Contact us for more details.</p>
+        </div>
+        <div class="event">
+          <h4>Thirumadhuram</h4>
+          <p class="event-date">February 15th, 2025</p>
+          <p>Classical Dance Pinnal Thiruvathira and Krishna Thiruvathira Live Sopanamgeetam program. Contact us for more details.</p>
+        </div>
+        <div class="event">
+          <h4>Classical Violin Fusion</h4>
+          <p class="event-date">February 15th, 2025</p>
+          <p>Classical Violin Fusion Program, Double Tayambaka, Triple Tayambaka & Panchrimelam.</p>
+        </div>
+    </div>
+
+    <div class="section-break">
       <h1>Contact Us</h1>
     </div>
 
     <div class="container" id="contact">
       <div class="content">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7883.465005844735!2d76.79440218584857!3d8.904442214380683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05e1054be2b49d%3A0xc44417693e077625!2sKALASARADHY%20VADYA%20KALA%20ACADEMY!5e0!3m2!1sen!2sca!4v1736722897457!5m2!1sen!2sca"
-          width="400"
-          height="300"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.0581071403844!2d76.65179580000002!3d9.058464599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b060f846a5c8a17%3A0x223befe6e53dfdbb!2sKalasaradhi%20Art%20Centre!5e0!3m2!1sen!2sca!4v1737947813258!5m2!1sen!2sca" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
         <div class="contact-info">
           <div class="card">
@@ -212,7 +316,92 @@
       </div>
     </div>
     <div class="footer">
-      <p>&copy; 2020 Kalasaradhi</p>
+      <p>&copy; 2025 Kalasaradhi</p>
+      <div class="footer-icons">
+        <a href="https://wa.me/9656875710" target="_blank"
+          ><i class="fa fa-whatsapp fa-2x"></i
+        ></a>
+        <a
+          href="https://www.facebook.com/kalasaradhiyam?mibextid=ZbWKwL"
+          target="_blank"
+          ><i class="fa fa-facebook fa-2x"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/kalasaradhiyam?igsh=MTAwenZ4aXgydXNsbw=="
+          target="_blank"
+          ><i class="fa fa-instagram fa-2x"></i
+        ></a>
+        <a
+          href="https://youtube.com/@kalasaradhi-xm7kn1xz8c?si=jd7YkDU76QfDqbES"
+          target="_blank"
+          ><i class="fa fa-youtube fa-2x"></i
+        ></a>
+      </div>
     </div>
+
+    <!-- The Modal -->
+    <div id="formModel" class="modal" style="display: none;">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close" onclick="closeModel()">&times;</span>
+        <h2>Register for Classes</h2>
+        <form>
+          <input class="register-text" type="text" placeholder="Name" />
+          <input class="register-text" type="email" placeholder="Email" />
+          <input class="register-text" type="text" placeholder="Whatsapp No" />
+          <input class="register-text" type="text" placeholder="Alternate Contact" />
+          <textarea class="register-area" placeholder="Classes Interested"></textarea>
+          <div class="terms">
+            <input type="checkbox" id="terms" name="terms" required />
+            <label for="terms">I agree to the <a href="#">terms and conditions</a></label>
+          </div>
+          <button class="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+      function displayMenu() {
+        var x = document.getElementById("mobile-menu");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+
+      /* Scroll to the element */
+      function scrollToSection(element) {
+        var ele = document.getElementById(element);
+        window.scrollTo(ele.offsetLeft, ele.offsetTop);
+        displayMenu();
+      }
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks the button, open the modal 
+      function openModel() {
+        // Get the modal
+        var modal = document.getElementById("formModel");
+        modal.style.display = "block";
+      }
+
+      // When the user clicks on <span> (x), close the modal
+      function closeModel() {
+        // Get the modal
+        var modal = document.getElementById("formModel");
+        modal.style.display = "none";
+      }
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+        var modal = document.getElementById("formModel");
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      } 
+    </script>
   </body>
 </html>
